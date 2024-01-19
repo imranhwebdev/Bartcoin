@@ -60,13 +60,25 @@
         
         position: relative;
         z-index: 99;
+        h1{
+            color: var(--Heading, #FFF);
+            -webkit-text-stroke-width: 3px; /* Add a unit like 'px' */
+            -webkit-text-stroke-color: var(--Black, #090F13);
+            text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+            font-family: Simpsonfont;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            span{
+               color: #FED403; 
+            }
+        }
         & p {
             margin-bottom: 40px;
             @include font-24;
             font-weight: 500;
-            @include ssm{
-                padding-right: 0%;
-            }
+            max-width: 400px;
         }
 
         
@@ -101,6 +113,118 @@
         right: 30%;
         bottom: 10%;
         z-index: -1;
+    }
+    & .count_down_numbers{
+        h5{
+            line-height: 130%; /* 32.5px */
+            text-transform: uppercase; 
+            margin-bottom: 15px;
+        }
+    }
+    & .single_items{
+        h3{
+            width: 68px;
+            height: 68px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: #FFF;
+            font-size: 32px;
+            color: #040404;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+        }
+        span{
+            @include font-15;
+            line-height: 160%;
+            margin-top: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    } 
+    & .token__list{
+        & .single__item {
+            p{
+               @include font-15;
+            }
+            span{
+                color: $primary;
+                @include font-15;
+                font-weight: 700;
+            }
+        }
+    }
+    & .progress_bar{
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.30);
+        background: rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(18px);
+        p{
+            @include font-16;
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        & .progress-bar{
+            background-color: $primary;
+            border-radius: 80px;
+        }
+        .progress, .progress-stacked {
+            --bs-progress-bg: #9AD2EB;
+        }
+    }
+    & .amount{
+        & .am_top{
+            margin-top: 22px;
+            margin-bottom: 8px;
+            p{
+               @include font-16;
+               font-weight: 500; 
+            }
+            span{
+                img{
+                    width: 24px;
+                }
+            }
+        }
+        & .amount_box {
+            padding: 8px;
+            padding-right: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            background: rgba(255, 255, 255, 0.30);
+            backdrop-filter: blur(18px);
+            & .left{
+                border-radius: 8px;
+                border: 1px solid rgba(255, 255, 255, 0.30);
+                background: rgba(255, 255, 255, 0.30);
+                backdrop-filter: blur(18px);
+                padding: 4px 12px;
+                align-items: center;
+                span{
+                    color: #0F0E0E;
+                    @include font-16;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    & .conut_down_box{
+        & .boxed__btn {
+            margin-top: 24px !important;
+            border-radius: 8px;
+        }
+    }
+    & .hero_middle_img{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            max-width: 514px;
+        }
     }
 }
 

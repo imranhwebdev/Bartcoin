@@ -10,6 +10,7 @@ import cloud5 from '../assets/img/hero-cloud-big.png'
 import sol from '../assets/img/sol.svg'
 import bart from '../assets/img/bart_logo.svg'
 import solar_walletlinear from '../assets/img/solar_wallet-linear.svg';
+import hero_m_img from '../assets/img/hero-m-img.png';
 export default function Banner(){
     const desc = "Where the Simpsons token moonshot on Solana!";
     const btnTxt = "BUY NOW";
@@ -85,12 +86,15 @@ export default function Banner(){
             <figure className="cloud1">
                 <img src={cloud1} alt="" />
             </figure>
+            <figure className="hero_middle_img">
+                <img src={hero_m_img} alt="" />
+            </figure>
             <div className="banner-wrapper">
                 <Container>
                     <Row className='align-items-center'>
                         <Col lg={7}>
                             <div className="banner-content">
-                                <h1>SPRINGFIELD AND <span>$ BART</span></h1>
+                                <h1>SPRINGFIELD AND <span>{'$ BART'}</span></h1>
                                 
                                 <figure className="cloud2">
                                     <img src={cloud2} alt="" />
@@ -146,9 +150,9 @@ export default function Banner(){
                                                                 <p>Presale Sold</p>
                                                                 <span>37%</span>
                                                             </div>
-                                                            <ProgressBar variant="warning" now={now}/>
+                                                            <ProgressBar now={now}/>
                                                         </div>
-                                                        <div className="amount pay">
+                                                        <div className="amount pay mb-3">
                                                             <div className="am_top d-flex align-items-center justify-content-between">
                                                                 <p>Amount in SOL you pay:</p>
                                                                 <span><img src={solar_walletlinear} alt="" /> 0.00 SOL</span>
@@ -163,13 +167,13 @@ export default function Banner(){
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <figure>
+                                                        <figure className="middle_reverse">
                                                             <img src={updownImg} alt="" />
                                                         </figure>
                                                         
                                                         <div className="amount receive">
                                                             <p>Amount in BART you receive:</p>
-                                                            <div className="amount_box d-flex align-items-center justify-content-between">
+                                                            <div className="amount_box d-flex align-items-center justify-content-between mt-2">
                                                                 <div className="left d-flex gap-2">
                                                                     <img src={bart} alt="" />
                                                                     <span>BART</span>
@@ -189,8 +193,6 @@ export default function Banner(){
                                         }
                                     </div>
                                 </div>
-
-
                             </div>
                         </Col>
                     </Row>
