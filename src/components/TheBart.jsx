@@ -13,7 +13,7 @@ function TheBart() {
     const btnTxt = "BUY NOW";
     const btnLink = "www.google.com";
   return (
-    <section className='theBart_area'>
+    <section className='theBart_area zigzag__bg'>
       <Container>
         <Row>
             <Col lg={8}>

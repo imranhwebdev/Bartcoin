@@ -105,18 +105,10 @@
 }
 
 
-
-
-
-
 /*=================================================
 ================ The Bart area CSS ================
 =================================================*/
 .theBart_area{
-    background-image: url('../img/zigzac-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
     padding-top: 180px;
     padding-bottom: 78px;
     & .theBart_left_content{
@@ -151,10 +143,6 @@
 .tokenomics__area{
     padding-top: 155px;
     padding-bottom: 140px;
-    background-image: url('../img/zigzac-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
     & .chartImg{
         max-width: 586px;
     }
@@ -354,12 +342,9 @@
 }
 
 
-
-
-
-
-
-
+/*=================================================
+================ Another Way area CSS ================
+=================================================*/
 .another_way_area{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -373,16 +358,69 @@
 }
 
 
-
-
-
-
-
+/*=================================================
+================ Why Choose area CSS ================
+=================================================*/
 .why_choose_area{
     padding-top: 210px;
     padding-bottom: 120px;
-    background-image: url('../img/zigzac-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
+}
+
+
+/*=================================================
+================ Bart It One area CSS ================
+=================================================*/
+.bart_it_one_area{
+    padding-top: 170px;
+    padding-bottom: 120px;
+}
+
+/*=================================================
+================ Hodl area CSS ================
+=================================================*/
+.hodl_area{
+    padding-top: 130px;
+    padding-bottom: 120px;
+    & .hodl_box{
+        @include bg_blur_w_border;
+        padding: 50px 60px;
+    }
+}
+
+/*=================================================
+================ Beyond Memes area CSS ================
+=================================================*/
+.beyond_memes_area{
+    padding-top: 130px;
+    padding-bottom: 170px;
+    position: relative;
+    z-index: 1;
+    & .section__title{
+        margin-bottom: 80px;
+        @include sm{
+            margin-bottom: 50px;
+        }
+    }
+    .beyond_inner{
+        position: relative;
+        z-index: 1;
+        & .cloudImg{
+            position: absolute;
+            max-width: 276px;
+            z-index: -1;
+        }
+        & .cloudImg.top{
+            top:-5px;
+            right: 20%;
+        }
+        & .cloudImg.bottom{
+            bottom:-5px;
+            left: 20%;
+        }
+        & .single__beyond__item{
+            padding: 30px;
+            height: 100%;
+            @include bg_blur_w_border;
+        }   
+    }
 }

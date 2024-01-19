@@ -18,7 +18,7 @@ function WhyChoose() {
         },
     ]
   return (
-    <section className='why_choose_area'>
+    <section className='why_choose_area zigzag__bg'>
       <Container>
         <Row>
             <Col lg={5}>

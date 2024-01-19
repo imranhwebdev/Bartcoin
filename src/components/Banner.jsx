@@ -99,9 +99,7 @@ export default function Banner(){
                                     <img src={cloud3} alt="" />
                                 </figure>
                                 <p>{desc}</p>
-                                <div className="btn-with-social">
-                                    <a href={btnLink} className="boxed__btn">{btnTxt} {btnSvg}</a>
-                                </div>
+                                <a href={btnLink} className="boxed__btn">{btnTxt} {btnSvg}</a>
                             </div>
                         </Col>
                         <Col lg={5}>

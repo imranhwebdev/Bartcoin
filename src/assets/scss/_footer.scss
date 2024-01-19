@@ -1,0 +1,97 @@
+.footer__area{
+    & .footer__top{
+        padding-top: 119px;
+        padding-bottom: 250px;
+        border-radius: 0px 0px 59px 59px;
+        border: 2px solid rgba(255, 255, 255, 0.50);
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(18px);
+        @include sm{
+            padding-top: 70px;
+            border-radius: 0px 0px 20px 20px;
+        }
+    }
+    & .footer__middle_w_bottom{
+        border-radius: 61px 61px 0px 0px;
+        border: 2px solid rgba(255, 255, 255, 0.50);
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(18px);
+        @include sm{
+            border-radius: 20px 20px 0px 0px;
+        }
+        & .footer__middle{
+            position: relative;
+            z-index: 9;
+            padding: 32px 0;
+            background-color: $primary;
+            & .footer_logo{
+                figure{
+                    max-width: 61px;
+                    margin-bottom: 0;
+                    @include sm{
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            & .footer_menu{
+                li{
+                    display: inline-block;
+                    transition: all .3s ease-in-out;
+                    padding:0 20px;
+                    & a{
+                        @include font-18;
+                        line-height: 160%;
+                        text-transform: uppercase;
+                        color: $_353743;
+                        font-weight: 400;
+                        display: block;
+                        @include transition;
+                    }
+                    &:hover a{
+                        font-weight: 600;
+                        color: #040404;
+                    }
+                }
+            }
+            & .social_items{
+                li{
+                    display: inline-block;
+                    margin-left: 16px;
+                    & a{
+                       display: block;
+                       padding: 15px 20px; 
+                       border-radius: 8px;
+                        background: #2E2E2E;
+                        &:hover{
+                            background-color: #078FCD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    & .footer_bottom{
+        background-color: #078FCD;
+        padding: 24px 0;
+        @include font-15;
+        color: $white;
+        line-height: 160%
+    }
+   & .footerM_Img{
+        max-width: 530px;
+        margin:0 auto;
+        margin-top: -340px;
+        margin-bottom: -20px;
+        z-index: -1;
+        @include lg{
+            margin-top: -300px;
+        }
+        @include mmd{
+            margin-top: -300px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+   }
+}

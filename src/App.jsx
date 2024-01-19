@@ -8,7 +8,10 @@ import Howtobuy from './components/Howtobuy'
 import RoadMap from './components/RoadMap'
 import AnotherWay from './components/AnotherWay'
 import WhyChoose from './components/WhyChoose'
-// import Contact from './components/Contact'
+import BartIsTheOne from './components/BartIsTheOne'
+import Hodl from './components/Hodl'
+import BeyondMemes from './components/BeyondMemes'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -23,6 +26,10 @@ function App() {
       <RoadMap />
       <AnotherWay />
       <WhyChoose />
+      <BartIsTheOne />
+      <Hodl />
+      <BeyondMemes />
+      <Footer />
     </>
   )
 }

@@ -31,7 +31,7 @@ function Tokenomics() {
         },
     ]
   return (
-    <section className='tokenomics__area' id='tokenomics'>
+    <section className='tokenomics__area zigzag__bg' id='tokenomics'>
       <Container>
         <Row className='align-items-center'>
             <Col lg={6}>

@@ -60,7 +60,7 @@ function RoadMap() {
   const title = 'ROADMAP';
 
   return (
-    <section className="road__map__area">
+    <section className="road__map__area zigzag__bg">
       <Container>
         <Row>
           <Col>
