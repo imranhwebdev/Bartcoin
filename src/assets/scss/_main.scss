@@ -1,0 +1,197 @@
+/* Banner CSS */
+
+.banner {
+    padding-top: 43px;
+    padding-bottom: 140px;
+    position: relative;
+    z-index: 1;
+    @include mmd {
+        padding-bottom: 140px;
+        padding-top: 120px;
+        background-size: contain;
+    }
+    @include sm {
+        padding-bottom: 30px;
+        padding-top: 120px;
+        background-size: contain;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 760.96px;
+        height: 373.49px;
+        // background: $primary;
+        filter: blur(347px);
+        transform: rotate(-46.62deg);
+        z-index: -1;
+        border-radius: 100%;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 1859px;
+        height: 800px;
+        // background-image: url("../img/hero-shap-1.png");
+        opacity: 100;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top left;
+        z-index: -1;
+    }
+    & .banner-wrapper{
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            width: 359.73px;
+            height: 308.57px;
+            left: -92.66px;
+            // background: $primary;
+            filter: blur(347px);
+            z-index:-1;
+            border-radius: 50%;
+        }  
+    }
+    &-content {
+        
+        position: relative;
+        z-index: 99;
+        & p {
+            margin-bottom: 40px;
+            @include font-24;
+            font-weight: 500;
+            @include ssm{
+                padding-right: 0%;
+            }
+        }
+    }
+    & .cloud1{
+        position: absolute;
+        top: 72px;
+        left: 10%;
+        max-width: 452px;
+    }
+    .cloud2{
+        max-width: 115px;
+    }
+    .cloud3{
+        max-width: 115px;
+        margin-left: 30%;
+    }
+    .cloud4{
+        max-width: 480px;
+        position: absolute;
+        right: 0;
+        bottom: 30%;
+        z-index: -1;
+    }
+    .cloud5{
+        max-width: 452px;
+        position: absolute;
+        right: 30%;
+        bottom: 10%;
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+/*=================================================
+================ The Bart area CSS ================
+=================================================*/
+.theBart_area{
+    background-image: url('../img/zigzac-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    padding-top: 180px;
+    padding-bottom: 78px;
+    & .theBart_left_content{
+        position: relative;
+        z-index: 1;
+        & .theBart_left_content_inner{
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.50);
+            background: rgba(255, 255, 255, 0.10);
+            backdrop-filter: blur(18px);
+            padding: 40px;
+        }
+        & .cloud{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            max-width: 508px;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+/*=================================================
+================ About area CSS ================
+=================================================*/
+.about__area{
+    padding-top: 120px;
+    padding-bottom: 115px;
+}
+
+/*=================================================
+================ Tokenomics area CSS ================
+=================================================*/
+.tokenomics__area{
+    padding-top: 155px;
+    padding-bottom: 140px;
+    background-image: url('../img/zigzac-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    & .chartImg{
+        max-width: 586px;
+    }
+}
+
+
+/*=================================================
+================ Howtobuy area CSS ================
+=================================================*/
+.howtobuy__area{
+    position: relative;
+    z-index: 1;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    & .howtobuy_single_item{
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.50);
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(18px);
+        padding: 60px 40px;
+        height: 100%;
+        & figure{
+            max-width: 212px;
+            margin:0 auto;
+            & img{
+                width: auto;
+            }
+        }
+    }
+    & .cloudleft{
+        max-width: 353px;
+        position: absolute;
+        left: 50px;
+        top: 22%;
+        z-index: -1;
+    }
+    & .cloudright{
+        position: absolute;
+        right: 50px;
+        bottom: 6%;
+        z-index: -1;
+    }
+}
