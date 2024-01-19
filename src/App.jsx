@@ -7,7 +7,7 @@ import Tokenomics from './components/Tokenomics'
 import Howtobuy from './components/Howtobuy'
 import RoadMap from './components/RoadMap'
 import AnotherWay from './components/AnotherWay'
-// import Services from './components/Services'
+import WhyChoose from './components/WhyChoose'
 // import Contact from './components/Contact'
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
       <Howtobuy />
       <RoadMap />
       <AnotherWay />
+      <WhyChoose />
     </>
   )
 }
