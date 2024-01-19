@@ -5,6 +5,8 @@ import TheBart from './components/TheBart'
 import About from './components/About'
 import Tokenomics from './components/Tokenomics'
 import Howtobuy from './components/Howtobuy'
+import RoadMap from './components/RoadMap'
+import AnotherWay from './components/AnotherWay'
 // import Services from './components/Services'
 // import Contact from './components/Contact'
 
@@ -18,6 +20,8 @@ function App() {
       <About />
       <Tokenomics />
       <Howtobuy />
+      <RoadMap />
+      <AnotherWay />
     </>
   )
 }
