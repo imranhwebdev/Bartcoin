@@ -13,16 +13,16 @@ function Hodl() {
     <section className='hodl_area zigzag__bg'>
       <Container>
         <Row className='align-items-center'>
-            <Col lg={5}>
+            <Col md={6} lg={5}>
                 <figure>
                     <img src={hodlImg} alt="" />
                 </figure>
             </Col>
-            <Col lg={{ span: 6, offset: 1 }}>
+            <Col md={6} lg={{ span: 6, offset: 1 }}>
                 <div className="hodl_box">
                     <h2>{title}</h2>
                     <p>{desc}</p>
-                    <a href={btnLink} className="boxed__btn mt-5">{btnTxt} {btnSvg}</a>
+                    <a href={btnLink} className="boxed__btn">{btnTxt} {btnSvg}</a>
                 </div>
             </Col>
         </Row>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import cloudImg from '../assets/img/large-cloud.png';
 function RoadMap() {
   const timelineData = [
     {
@@ -40,7 +41,7 @@ function RoadMap() {
         <span className="tag">{data.phase.tag}</span>
         <div className="roadmap_lists">
           {data.items.map((item, index) => (
-            <div key={index}>{item}</div>
+            <li key={index}>{item}</li>
           ))}
         </div>
         <span className="circle" />
@@ -61,6 +62,12 @@ function RoadMap() {
 
   return (
     <section className="road__map__area zigzag__bg" id='roadmap'>
+    <figure className='cloud_r_Img1'>
+      <img src={cloudImg} alt="" />
+    </figure>
+      <figure className='cloud_r_Img2'>
+        <img src={cloudImg} alt="" />
+      </figure>
       <Container>
         <Row>
           <Col>
@@ -77,6 +84,15 @@ function RoadMap() {
           </Col>
         </Row>
       </Container>
+    <figure className='cloud_r_Img3'>
+      <img src={cloudImg} alt="" />
+    </figure>
+      <figure className='cloud_r_Img4'>
+        <img src={cloudImg} alt="" />
+      </figure>
+      <figure className='cloud_r_Img5'>
+        <img src={cloudImg} alt="" />
+      </figure>
     </section>
   );
 }

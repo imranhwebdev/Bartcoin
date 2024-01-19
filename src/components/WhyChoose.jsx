@@ -22,7 +22,7 @@ function WhyChoose() {
       <Container>
         <Row>
             <Col lg={5}>
-                <figure>
+                <figure className='choose_left_img'>
                     <img src={whyChooseImg} alt="" />
                 </figure>
             </Col>
@@ -30,7 +30,7 @@ function WhyChoose() {
                 <div className="why_choose_content">
                     <h3>{title}</h3>
                     {whychooseItems.map((whychooseItem, index)=>(
-                        <div className="single_item d-flex align-items-center gap-4 mb-4">
+                        <div className="single_item d-flex align-items-center gap-4">
                             <figure>
                                 <img src={whychooseItem.img} alt="" />
                             </figure>

@@ -23,7 +23,7 @@ function TheBart() {
                         {TheBartLists.map((TheBartList, index)=>(
                             <li key={index}>{TheBartList.content}</li>
                         ))}
-                        <a href={btnLink} className='inline__btn mt-5'>{btnTxt}</a>
+                        <a href={btnLink} className='inline__btn mt-4'>{btnTxt}</a>
                    </div>
                     <figure className='cloud'>
                         <img src={cloud} alt="" />

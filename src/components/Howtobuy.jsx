@@ -36,8 +36,8 @@ function Howtobuy() {
       <Container>
         <Row>
           <Col>
-              <div className="section__title text-center mb-5">
-                <h2>How To Buy $ BART Token</h2>
+              <div className="section__title text-center mb-5 pb-2">
+                <h2>How To Buy <span>$ BART</span> Token</h2>
                 <p>Ready to join the meme token craze? Buying meme tokens ls simple! Head to our website and link your Phantom wallet and complete the purchase. Embrace the fun of $BART culture with ease!</p>
               </div>
           </Col>

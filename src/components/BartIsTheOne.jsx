@@ -11,12 +11,12 @@ function BartIsTheOne() {
     <section className='bart_it_one_area'>
       <Container>
         <Row className='align-items-center'>
-            <Col md={8}>
+            <Col md={6} lg={8} className='order-2 order-md-1 text-center text-md-start mt-5 mt-md-0'>
                 <h2><span>$BART</span> IS THE ONE</h2>
                 <p>Don't have a cow, man! Get some <a href="#">$BART.</a></p>
-                <a href={btnLink} className="boxed__btn mt-5">{btnTxt} {btnSvg}</a>
+                <a href={btnLink} className="boxed__btn mt-4 mt-md-5">{btnTxt} {btnSvg}</a>
             </Col>
-            <Col md={4}>
+            <Col md={6} lg={4} className='order-1 order-md-2'>
                 <figure className='bartIsOne_img'>
                     <img src={bartIsOneImg} alt="" />
                 </figure>

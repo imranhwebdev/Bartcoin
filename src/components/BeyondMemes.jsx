@@ -44,7 +44,7 @@ function BeyondMemes() {
                 <img src={cloudImg} alt="" />
             </figure>
             {beyondItems.map((beyondItem, index)=>(
-                <Col sm={4} key={index} className='mb-3'>
+                <Col sm={6} md={4} key={index} className='mb-3'>
                     <div className="single__beyond__item text-center">
                         <h5>{beyondItem.itemTitle}</h5>
                         <p>{beyondItem.itemDesc}</p>
