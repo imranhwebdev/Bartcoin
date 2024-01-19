@@ -12,7 +12,7 @@
     }
     @include sm {
         padding-bottom: 30px;
-        padding-top: 120px;
+        padding-top: 80px;
         background-size: contain;
     }
     &::before {
@@ -65,11 +65,6 @@
             -webkit-text-stroke-width: 3px; /* Add a unit like 'px' */
             -webkit-text-stroke-color: var(--Black, #090F13);
             text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
-            font-family: Simpsonfont;
-            font-size: 100px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
             span{
                color: #FED403; 
             }
@@ -79,6 +74,10 @@
             @include font-24;
             font-weight: 500;
             max-width: 400px;
+            @include sm{
+                margin-bottom: 20px;
+                margin-top: -20px;
+            }
         }
 
         
@@ -92,6 +91,10 @@
         top: 72px;
         left: 10%;
         max-width: 452px;
+        @include sm{
+            padding-right: 10%;
+            padding-left: 8%;
+        }
     }
     .cloud2{
         max-width: 115px;
@@ -99,6 +102,10 @@
     .cloud3{
         max-width: 115px;
         margin-left: 30%;
+        @include sm{
+            margin-left: 50%;
+            margin-bottom: -10%;
+        }
     }
     .cloud4{
         max-width: 480px;
@@ -224,6 +231,20 @@
         transform: translateX(-50%);
         img{
             max-width: 514px;
+        }
+    }
+    .banner-right{
+        @include mmd{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        @include sm{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        @include ssm{
+            margin-left: 0%;
+            margin-right: 0%;
         }
     }
 }

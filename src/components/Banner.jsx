@@ -107,7 +107,7 @@ export default function Banner(){
                             </div>
                         </Col>
                         <Col lg={5}>
-                            <div className="banner-right">
+                            <div className="banner-right mt-5 mt-lg-0">
                                 <div className="count__down">
                                     <div className="count_down_box_hook"></div>
                                     <div className="conut_down_box">

@@ -61,19 +61,19 @@
         font-size: 80px;
     }
     @include xl {
-        font-size: 70px;
+        font-size: 75px;
     }
     @include lg {
-        font-size: 65px;
+        font-size: 70px;
     }
     @include md {
-        font-size: 55px;
+        font-size: 65px;
     }
     @include sm {
-        font-size: 50px;
+        font-size: 60px;
     }
-    @include xsm {
-        font-size: 45px;
+    @include ssm {
+        font-size: 50px;
     }
 }
 
