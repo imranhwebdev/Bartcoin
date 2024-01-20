@@ -204,7 +204,7 @@
     }
     & .hero_middle_img{
         position: absolute;
-        bottom: 70px;
+        bottom: 55px;
         left: 50%;
         transform: translateX(-50%);
         margin-left: -48px;
@@ -227,7 +227,16 @@
         }
     }
 }
-
+.frist_step .count_down_numbers{
+    height: 832px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.countDown_box{
+    gap: 32px;
+    margin-top: -20px;
+}
 
 /*=================================================
 ================ The Bart area CSS ================

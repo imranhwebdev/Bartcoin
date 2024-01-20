@@ -21,7 +21,7 @@ export default function Banner(){
 
   const countTitle = "PRESALE ENDS IN";
 
-  const [countdownDate] = useState(new Date('Jan 23, 2024 10:33:00').getTime());
+  const [countdownDate] = useState(new Date('Jan 20, 2024 21:25:00').getTime());
   const [state, setState] = useState({
       days: 0,
       hours: 0,
@@ -116,83 +116,105 @@ export default function Banner(){
                                     <div className="conut_down_box">
                                         {state.seconds > 0 
                                             ? 
-                                                <div>
+                                                <div className="frist_step">
                                                     <div className="count_down_numbers text-center mb-3">
-                                                        <h5>{countTitle}</h5>
-                                                        <div className="countDown_box  d-flex justify-content-between">
-                                                            {/* <div className="single_items day">
-                                                                <h3>{state.days > 0 ? state.days : '0'}</h3>
-                                                                <span>Days</span>
-                                                            </div> */}
-                                                            <div className="single_items hours">
-                                                                <h3>{state.hours > 0 ? state.hours : '00'}</h3>
-                                                                <span>Hours</span>
-                                                            </div>
-                                                            <div className="single_items mins">
-                                                                <h3>{state.minutes > 0 ? state.minutes : '00'}</h3>
-                                                                <span>Minutes</span>
-                                                            </div>
-                                                            <div className="single_items secounds">
-                                                                <h3>{state.seconds> 0 ? state.seconds : '00'}</h3>
-                                                                <span>Secounds</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="countdown_box_bottom">
-                                                        <div className="token__list">
-                                                            {tokenSingleItmes.map((tokenSingleItme, index)=>(
-                                                                <div className="single__item d-flex align-items-center justify-content-between mb-2" key={index}>
-                                                                    <p>{tokenSingleItme.title}</p>
-                                                                    <span>{tokenSingleItme.value}</span>
+                                                        <div className="count_down_num_box">
+                                                            <h5>{countTitle}</h5>
+                                                            <div className="countDown_box  d-flex justify-content-between">
+                                                                {/* <div className="single_items day">
+                                                                    <h3>{state.days > 0 ? state.days : '0'}</h3>
+                                                                    <span>Days</span>
+                                                                </div> */}
+                                                                <div className="single_items hours">
+                                                                    <h3>{state.hours > 0 ? state.hours : '00'}</h3>
+                                                                    <span>Hours</span>
                                                                 </div>
-                                                            ))}
-                                                            
-                                                        </div>
-                                                        <div className="progress_bar mt-3">
-                                                            <div className="p_content d-flex align-items-center justify-content-between">
-                                                                <p>Presale Sold</p>
-                                                                <span>37%</span>
-                                                            </div>
-                                                            <ProgressBar now={now}/>
-                                                        </div>
-                                                        <div className="amount pay mb-3">
-                                                            <div className="am_top d-flex align-items-center justify-content-between">
-                                                                <p>Amount in SOL you pay:</p>
-                                                                <span><img src={solar_walletlinear} alt="" /> 0.00 SOL</span>
-                                                            </div>
-                                                            <div className="amount_box d-flex align-items-center justify-content-between">
-                                                                <div className="left d-flex gap-2">
-                                                                    <img src={sol} alt="" />
-                                                                    <span>SOL</span>
+                                                                <div className="single_items mins">
+                                                                    <h3>{state.minutes > 0 ? state.minutes : '00'}</h3>
+                                                                    <span>Minutes</span>
                                                                 </div>
-                                                                <div className="right">
-                                                                    <span><input type="number" name="number" placeholder="234234234" id="number" /></span>
+                                                                <div className="single_items secounds">
+                                                                    <h3>{state.seconds> 0 ? state.seconds : '00'}</h3>
+                                                                    <span>Secounds</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <figure className="middle_reverse">
-                                                            <img src={updownImg} alt="" />
-                                                        </figure>
-                                                        
-                                                        <div className="amount receive">
-                                                            <p>Amount in BART you receive:</p>
-                                                            <div className="amount_box d-flex align-items-center justify-content-between mt-2">
-                                                                <div className="left d-flex gap-2">
-                                                                    <img src={bart} alt="" />
-                                                                    <span>BART</span>
-                                                                </div>
-                                                                <div className="right">
-                                                                    <span><input type="number" name="number" placeholder="2342342342345454" id="number" /></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <a href="#" className="boxed__btn d-block text-center mt-3">Connect Wallet</a>
                                                     </div>
                                                 </div>
                                             : 
-                                                <div className="count_down_out">
-                                                    <h2>Comming Soon</h2>
+                                            <div>
+                                            <div className="count_down_numbers text-center mb-3">
+                                                <h5>{countTitle}</h5>
+                                                <div className="countDown_box  d-flex justify-content-between">
+                                                    {/* <div className="single_items day">
+                                                        <h3>{state.days > 0 ? state.days : '0'}</h3>
+                                                        <span>Days</span>
+                                                    </div> */}
+                                                    <div className="single_items hours">
+                                                        <h3>{state.hours > 0 ? state.hours : '00'}</h3>
+                                                        <span>Hours</span>
+                                                    </div>
+                                                    <div className="single_items mins">
+                                                        <h3>{state.minutes > 0 ? state.minutes : '00'}</h3>
+                                                        <span>Minutes</span>
+                                                    </div>
+                                                    <div className="single_items secounds">
+                                                        <h3>{state.seconds> 0 ? state.seconds : '00'}</h3>
+                                                        <span>Secounds</span>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div className="countdown_box_bottom">
+                                                <div className="token__list">
+                                                    {tokenSingleItmes.map((tokenSingleItme, index)=>(
+                                                        <div className="single__item d-flex align-items-center justify-content-between mb-2" key={index}>
+                                                            <p>{tokenSingleItme.title}</p>
+                                                            <span>{tokenSingleItme.value}</span>
+                                                        </div>
+                                                    ))}
+                                                    
+                                                </div>
+                                                <div className="progress_bar mt-3">
+                                                    <div className="p_content d-flex align-items-center justify-content-between">
+                                                        <p>Presale Sold</p>
+                                                        <span>37%</span>
+                                                    </div>
+                                                    <ProgressBar now={now}/>
+                                                </div>
+                                                <div className="amount pay mb-3">
+                                                    <div className="am_top d-flex align-items-center justify-content-between">
+                                                        <p>Amount in SOL you pay:</p>
+                                                        <span><img src={solar_walletlinear} alt="" /> 0.00 SOL</span>
+                                                    </div>
+                                                    <div className="amount_box d-flex align-items-center justify-content-between">
+                                                        <div className="left d-flex gap-2">
+                                                            <img src={sol} alt="" />
+                                                            <span>SOL</span>
+                                                        </div>
+                                                        <div className="right">
+                                                            <span><input type="number" name="number" placeholder="234234234" id="number" /></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <figure className="middle_reverse">
+                                                    <img src={updownImg} alt="" />
+                                                </figure>
+                                                
+                                                <div className="amount receive">
+                                                    <p>Amount in BART you receive:</p>
+                                                    <div className="amount_box d-flex align-items-center justify-content-between mt-2">
+                                                        <div className="left d-flex gap-2">
+                                                            <img src={bart} alt="" />
+                                                            <span>BART</span>
+                                                        </div>
+                                                        <div className="right">
+                                                            <span><input type="number" name="number" placeholder="2342342342345454" id="number" /></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" className="boxed__btn d-block text-center mt-3">Connect Wallet</a>
+                                            </div>
+                                        </div>
                                         }
                                     </div>
                                 </div>
