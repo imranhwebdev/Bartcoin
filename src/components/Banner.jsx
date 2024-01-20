@@ -21,7 +21,7 @@ export default function Banner(){
 
   const countTitle = "PRESALE ENDS IN";
 
-  const [countdownDate] = useState(new Date('Jan 20, 2024 21:25:00').getTime());
+  const [countdownDate] = useState(new Date('Jan 21, 2024 00:10:00').getTime());
   const [state, setState] = useState({
       days: 0,
       hours: 0,
@@ -108,7 +108,7 @@ export default function Banner(){
                                 <p>{desc}</p>
                                 <a href={btnLink} className="boxed__btn">{btnTxt} {btnSvg}</a>
                                 
-                                <figure className="hero_middle_small_device_img d-lg-none">
+                                <figure className="hero_middle_small_device_img d-lg-none mt-4">
                                     <img src={hero_m_img} alt="" />
                                 </figure>
                             </div>

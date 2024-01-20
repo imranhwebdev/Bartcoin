@@ -21,7 +21,7 @@ export default function Header(){
                         <Link to="howtobuy" spy={true} smooth={true} offset={-100} duration={500} >How to buy</Link>
                         <Link to="roadmap" spy={true} smooth={true} offset={-100} duration={500} >Roadmap</Link>
                     </Nav>
-                    <a href="#presale" className='inline__btn'>BUY NOW</a>
+                    <a href="#presale_coundDown_box" className='inline__btn'>BUY NOW</a>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

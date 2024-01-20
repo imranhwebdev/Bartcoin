@@ -34,7 +34,7 @@ function AnotherWay() {
     <section className='another_way_area' id="presale">
       <Container>
         <Row className='justify-content-center'>
-            <Col lg={8} className='text-center'>
+            <Col sm={10} md={9} lg={8} className='text-center'>
                 <div className="section__title">
                   <h2>Another Way to Join the Presale</h2>
                   <p>Having trouble with the DApp or want a simpler method? Participate in the
