@@ -738,6 +738,9 @@
             }
             & .boxed__btn{
                 margin-top: 30px;
+                padding: 15px 25px;
+                @include font-16;
+                text-transform: capitalize;
             }
         }
         & .min_max{
@@ -780,6 +783,8 @@
             @include sm{
                 margin-bottom: 30px;
                 text-align: center;
+                font-size: 35px;
+                -webkit-text-stroke-width: 1.5px; /* Add a unit like 'px' */
             }
         }
         & .single_item{

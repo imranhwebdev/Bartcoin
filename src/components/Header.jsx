@@ -25,13 +25,13 @@ export default function Header(){
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
-                        <Link to="/"  spy={true} smooth={true} offset={50} duration={500} >Home</Link>
+                        <Link to="hero"  spy={true} smooth={true} offset={50} duration={500} >Home</Link>
                         <Link to="about" spy={true} smooth={true} offset={-100} duration={500} >About</Link>
                         <Link to="tokenomics" spy={true} smooth={true} offset={-100} duration={500} >Tokenomics</Link>
                         <Link to="howtobuy" spy={true} smooth={true} offset={-100} duration={500} >How to buy</Link>
                         <Link to="roadmap" spy={true} smooth={true} offset={-100} duration={500} >Roadmap</Link>
                     </Nav>
-                    <a href="#" className='inline__btn'>BUY NOW</a>
+                    <a href="#presale" className='inline__btn'>BUY NOW</a>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

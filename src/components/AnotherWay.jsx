@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import qrcode from '../assets/img/QR-code.svg'
 function AnotherWay() {
   return (
-    <section className='another_way_area'>
+    <section className='another_way_area' id="presale">
       <Container>
         <Row className='justify-content-center'>
             <Col lg={8} className='text-center'>
