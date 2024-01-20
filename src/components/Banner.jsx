@@ -120,10 +120,10 @@ export default function Banner(){
                                                     <div className="count_down_numbers text-center mb-3">
                                                         <h5>{countTitle}</h5>
                                                         <div className="countDown_box  d-flex justify-content-between">
-                                                            <div className="single_items day">
+                                                            {/* <div className="single_items day">
                                                                 <h3>{state.days > 0 ? state.days : '0'}</h3>
                                                                 <span>Days</span>
-                                                            </div>
+                                                            </div> */}
                                                             <div className="single_items hours">
                                                                 <h3>{state.hours > 0 ? state.hours : '00'}</h3>
                                                                 <span>Hours</span>
@@ -166,7 +166,7 @@ export default function Banner(){
                                                                     <span>SOL</span>
                                                                 </div>
                                                                 <div className="right">
-                                                                    <span>234234234</span>
+                                                                    <span><input type="number" name="number" placeholder="234234234" id="number" /></span>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -182,7 +182,7 @@ export default function Banner(){
                                                                     <span>BART</span>
                                                                 </div>
                                                                 <div className="right">
-                                                                    <span>2342342342345454</span>
+                                                                    <span><input type="number" name="number" placeholder="2342342342345454" id="number" /></span>
                                                                 </div>
                                                             </div>
                                                         </div>

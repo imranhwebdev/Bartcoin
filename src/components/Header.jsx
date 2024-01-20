@@ -1,22 +1,12 @@
-import { React, useState } from 'react'
+import React from 'react';
 import {Container} from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/img/site-logo.svg'
 import { Link, animateScroll as scroll} from 'react-scroll'
-
 export default function Header(){
-    const [fix, setFix] = useState(false)
-    function setFixed(){
-                if(window.scrollY >= 392){
-                    setFix(true)
-                }else{
-                    setFix(false)
-                }
-            }
-            window.addEventListener("scroll", setFixed)
-         return(
-        <header className={fix ? 'heading fixed' : 'heading'}>
+    return(
+        <header className="heading">
             <Navbar collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="/">

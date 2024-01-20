@@ -1,7 +1,7 @@
 /* Banner CSS */
 
 .banner {
-    padding-top: 43px;
+    padding-top: 160px;
     padding-bottom: 140px;
     position: relative;
     z-index: 1;
@@ -15,49 +15,7 @@
         padding-top: 80px;
         background-size: contain;
     }
-    &::before {
-        position: absolute;
-        content: "";
-        right: 0;
-        top: 0;
-        width: 760.96px;
-        height: 373.49px;
-        // background: $primary;
-        filter: blur(347px);
-        transform: rotate(-46.62deg);
-        z-index: -1;
-        border-radius: 100%;
-    }
-    &::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 1859px;
-        height: 800px;
-        // background-image: url("../img/hero-shap-1.png");
-        opacity: 100;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top left;
-        z-index: -1;
-    }
-    & .banner-wrapper{
-        &::before {
-            position: absolute;
-            content: "";
-            bottom: 0;
-            width: 359.73px;
-            height: 308.57px;
-            left: -92.66px;
-            // background: $primary;
-            filter: blur(347px);
-            z-index:-1;
-            border-radius: 50%;
-        }  
-    }
     &-content {
-        
         position: relative;
         z-index: 99;
         h1{
@@ -82,13 +40,21 @@
 
         
     }
+    & .count__down{
+        max-width: 470px;
+        margin-left: auto;
+    }
+    & .countDown_box{
+        max-width: 280px;
+        margin: 0 auto;
+    }
     & .count_down_numbers, .countdown_box_bottom{
         padding: 24px;
         @include bg_blur_w_border;
     }
     & .cloud1{
         position: absolute;
-        top: 72px;
+        top: 172px;
         left: 10%;
         max-width: 452px;
         @include sm{
@@ -217,6 +183,18 @@
                 }
             }
         }
+        & input{
+            background: transparent;
+            border: 0;
+            color: #fff;
+            padding: 0;
+        }
+        & input[type=number] {
+            text-align:right;
+          }
+          & input::placeholder {
+            color: #fff;
+            }
     }
     & .conut_down_box{
         & .boxed__btn {
@@ -226,11 +204,12 @@
     }
     & .hero_middle_img{
         position: absolute;
-        bottom: 0;
+        bottom: 70px;
         left: 50%;
         transform: translateX(-50%);
+        margin-left: -48px;
         img{
-            max-width: 514px;
+            max-width: 532px;
         }
     }
     .banner-right{
