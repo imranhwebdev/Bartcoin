@@ -1,7 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import qrcode from '../assets/img/QR-code.svg'
 function AnotherWay() {
+  const [copiedMessageVisible, setCopiedMessageVisible] = useState(false);
+
+  const handleCopyClick = () => {
+    // Find the element with the content to copy
+    const contentToCopy = document.querySelector('.content p');
+
+    // Create a range and select the text
+    const range = document.createRange();
+    range.selectNode(contentToCopy);
+
+    // Clear any existing selection and add the new one
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Execute the copy command
+    document.execCommand('copy');
+
+    // Clear the selection
+    window.getSelection().removeAllRanges();
+
+    // Show the copied message
+    setCopiedMessageVisible(true);
+
+    // Hide the message after a certain duration (e.g., 2 seconds)
+    setTimeout(() => {
+      setCopiedMessageVisible(false);
+    }, 2000);
+  };
   return (
     <section className='another_way_area' id="presale">
       <Container>
@@ -21,7 +49,7 @@ function AnotherWay() {
                         <div className="content">
                             <h5>Address</h5>
                             <p>bartcoin.sol</p>
-                            <a href="#" className='boxed__btn'>Copy Address</a>
+                            <button className='boxed__btn' onClick={handleCopyClick}>{copiedMessageVisible ? 'Copied!' : 'Copy Address'}</button>
                         </div>
                     </div>
                 </div>

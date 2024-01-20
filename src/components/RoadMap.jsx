@@ -19,7 +19,7 @@ function RoadMap() {
       },
       items: [
         'Public Presale', 
-        'Dexscreener and Birdseye Update',
+        'Dexscreener and Birdeye Update',
         'Build Community',
     ],
     },
