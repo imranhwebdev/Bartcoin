@@ -12,7 +12,7 @@ export default function About(){
                     <Col md={10} className='text-center'>
                         <h2>ABOUT <span>{dollarSign} BART</span> TOKEN</h2>
                         <p>{desc}</p>
-                        <a href="#hero" className='inline__btn mt-5'>BUY NOW</a>
+                        <a href="#presale_coundDown_box" className='inline__btn mt-5'>BUY NOW</a>
                     </Col>
                 </Row>
             </Container>

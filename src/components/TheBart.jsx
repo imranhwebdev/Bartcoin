@@ -11,7 +11,7 @@ function TheBart() {
         {content: "For a playful, decentralized world, where the fun would begin."},
     ];
     const btnTxt = "BUY NOW";
-    const btnLink = "#hero";
+    const btnLink = "#presale_coundDown_box";
   return (
     <section className='theBart_area zigzag__bg'>
       <Container>

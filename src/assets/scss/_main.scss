@@ -11,7 +11,7 @@
         background-size: contain;
     }
     @include sm {
-        padding-bottom: 30px;
+        padding-bottom: 80px;
         background-size: contain;
     }
     &-content {
@@ -28,12 +28,16 @@
             span{
                color: #FED403; 
             }
+            @include sm{
+            -webkit-text-stroke-width: 1.5px; /* Add a unit like 'px' */
+            }
         }
         & p {
             margin-bottom: 40px;
             @include font-24;
             font-weight: 500;
             max-width: 400px;
+            margin-top: 40px;
             @include sm{
                 font-size: 20px;
                 margin:0 auto;
@@ -74,20 +78,30 @@
         top: 172px;
         left: 10%;
         max-width: 452px;
-        @include sm{
+        @include mmd{
+            left: -5%;
+            top: 60%;
             padding-right: 10%;
             padding-left: 8%;
         }
     }
     .cloud2{
         max-width: 115px;
+        @include sm{
+            position: absolute;
+            right: -8%;
+            top: 40%;
+        }
     }
     .cloud3{
         max-width: 115px;
         margin-left: 30%;
+        position: absolute;
+        z-index: -1;
         @include sm{
-            margin-left: 50%;
-            margin-bottom: -10%;
+            margin-left: -10%;
+            margin-top: 17%;
+            
         }
     }
     .cloud4{
@@ -96,6 +110,9 @@
         right: 0;
         bottom: 30%;
         z-index: -1;
+        @include mmd{
+            display: none;
+        }
     }
     .cloud5{
         max-width: 452px;
@@ -104,7 +121,9 @@
         bottom: 10%;
         z-index: -1;
         @include mmd{
-
+            max-width: 352px;
+            bottom: 30px;
+            right: 0%;
         }
     }
     & .count_down_numbers{
@@ -744,11 +763,18 @@
         border-radius: 15px;
         border: 2px solid #8DD1F0;
         padding: 30px;
+        @include sm{
+            padding: 18px;
+        }
         & .qr_box_inner{
             border-radius: 9.052px;
             border: 2px solid #8DD1F0;
             background: #1BA3E1;
             padding: 27.157px;
+            @include sm{
+                padding: 15px;
+                gap: 10px !important;
+            }
             & .content{
                 p{
                     color: $primary;
