@@ -208,7 +208,7 @@ export default function Banner(){
                                                     <div className="amount pay">
                                                         <div className="am_top d-flex align-items-center justify-content-between">
                                                             <p>Amount in SOL you pay:</p>
-                                                            <span><img src={solar_walletlinear} alt="" /> 0.00 SOL</span>
+                                                            <span><img src={solar_walletlinear} alt="" /> {calculatedAmount.toFixed(2)} SOL</span>
                                                         </div>
                                                         <div className="amount_box d-flex align-items-center justify-content-between">
                                                             <div className="left d-flex gap-2">
@@ -219,8 +219,6 @@ export default function Banner(){
                                                                 <span><input type="number" name="number" placeholder="0" id="number" value={userInput} onChange={handleInputChange} /></span>
                                                             </div>
                                                         </div>
-                                                        
-                                                        <p>Calculated Amount: {calculatedAmount.toFixed(2)} SOL</p>
                                                     </div>
 
                                                     <figure className="middle_reverse mt-3 mb-1 pb-1" onClick={handleToggleOrder}>
