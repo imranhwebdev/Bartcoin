@@ -2,12 +2,12 @@
 
 .banner {
     padding-top: 160px;
-    padding-bottom: 140px;
+    padding-bottom: 240px;
     position: relative;
     z-index: 1;
     @include mmd {
         padding-top: 140px;
-        padding-bottom: 140px;
+        padding-bottom: 150px;
         background-size: contain;
     }
     @include sm {
@@ -189,7 +189,6 @@
     }
     & .amount{
         & .am_top{
-            margin-top: 22px;
             margin-bottom: 8px;
             p{
                @include font-16;
@@ -290,14 +289,33 @@
 .banner .amount input[type=number] {
     width: 100%;
 }
+.middle_reverse{
+    cursor: pointer;
+    @include transition;
+    &:hover{
+        opacity: .5;
+    }
+}
+
+.amount-container {
+    display: flex;
+    flex-direction: column;
+    transition: -webkit-flex-direction 0.5s ease; /* For WebKit browsers */
+    transition: flex-direction 0.5s ease;
+  }
+  .amount-container.reverse {
+    flex-direction: column-reverse; 
+    transition: -webkit-flex-direction 0.5s ease; /* For WebKit browsers */
+    transition: flex-direction 0.5s ease;
+  }
 /*=================================================
 ================ The Bart area CSS ================
 =================================================*/
 .theBart_area{
-    padding-top: 180px;
+    padding-top: 80px;
     padding-bottom: 50px;
     @include sm{
-        padding-top: 120px;
+        padding-top: 50px;
         padding-bottom: 120px;
     }
     & .theBart_left_content{
@@ -352,10 +370,12 @@
 =================================================*/
 .about__area{
     padding-top: 120px;
-    padding-bottom: 115px;
+    padding-bottom: 215px;
+    @include mmd{
+        padding-bottom: 100px;
+    }
     @include sm{
         padding-top: 80px;
-        padding-bottom: 80px;
     }
     h2{
         margin-bottom: 30px;
@@ -372,9 +392,9 @@
 ================ Tokenomics area CSS ================
 =================================================*/
 .tokenomics__area{
-    padding-top: 165px;
+    padding-top: 65px;
     padding-bottom: 140px;
-    @include sm{
+    @include mmd{
         padding-left: 3%;
         padding-right: 3%;
         padding-bottom: 80px;
@@ -394,6 +414,9 @@
         position: relative;
         z-index: 1;
         padding-left: 75px;
+        @include sm{
+            padding-left: 55px;
+        }
         &:before{
             position: absolute;
             content: "";
@@ -405,6 +428,11 @@
             transform: translateY(-50%);
             border-radius: 50%;
             border:8px solid #fff;
+            @include sm{
+                width: 40px;
+                height: 40px;
+                border: 5px solid #fff;
+            }
         }
         &:nth-child(2)::before{
             background:#E16DDF;
@@ -435,16 +463,19 @@
     position: relative;
     z-index: 1;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 220px;
     @include sm{
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
     & .section__title{
         h2{
             margin-bottom: 48px;
             @include sm{
                 margin-bottom: 30px;
+            }
+            & span{
+                display: inline-block;
             }
         }
         p{
@@ -496,17 +527,16 @@
     }
 }
 
-
 /*=================================================
 ================ RoadMap area CSS ================
 =================================================*/
 .road__map__area{
-    padding-top: 190px;
+    padding-top: 90px;
     padding-bottom: 100px;
     position: relative;
     z-index: 1;
-    @include sm{
-        padding-top: 120px;
+    @include mmd{
+        padding-top: 80px;
         padding-bottom: 120px;
     }
     & .section__title{
@@ -745,10 +775,14 @@
 =================================================*/
 .another_way_area{
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 220px;
+    @include mmd{
+        padding-top: 120px;
+        padding-bottom: 150px;
+    }
     @include sm{
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
     & .section__title{
         h2{
@@ -813,10 +847,14 @@
 ================ Why Choose area CSS ================
 =================================================*/
 .why_choose_area{
-    padding-top: 210px;
+    padding-top: 110px;
     padding-bottom: 120px;
+    @include mmd{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     @include sm{
-        padding-top: 150px;
+        padding-top: 50px;
         padding-bottom: 80px;
     }
     & .why_choose_content{
@@ -877,10 +915,14 @@
 ================ Bart It One area CSS ================
 =================================================*/
 .bart_it_one_area{
-    padding-top: 170px;
-    padding-bottom: 120px;
+    padding-top: 140px;
+    padding-bottom: 220px;
+    @include mmd{
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
     @include sm{
-        padding-top: 90px;
+        padding-top: 70px;
         padding-bottom: 90px;
     }
     p{
@@ -900,9 +942,10 @@
 ================ Hodl area CSS ================
 =================================================*/
 .hodl_area{
-    padding-top: 130px;
+    padding-top: 60px;
     padding-bottom: 120px;
     @include sm{
+        padding-top: 40px;
         padding-bottom: 90px;
     }
     & .hodl_box{
