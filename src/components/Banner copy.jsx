@@ -29,8 +29,7 @@ export default function Banner(){
       seconds: 0,
   });
   useEffect(() => {
-    const interval = setInterval(() => setNewTime(), 1000);
-    return () => clearInterval(interval);
+        setInterval(() => setNewTime(), 1000);
     }, []);
     const setNewTime = () => {
         if (countdownDate) {
@@ -93,24 +92,14 @@ export default function Banner(){
 
 
 
-  const fixedMultiplier = 8733.00;
+  const [userInput, setUserInput] = useState('');
 
-  const [inputNumber1, setInputNumber1] = useState("");
-  const [inputNumber2, setInputNumber2] = useState("");
-
-  const handleInputChange1 = (event) => {
-    const number = parseFloat(event.target.value);
-    setInputNumber1(isNaN(number) ? "" : number);
-    setInputNumber2(isNaN(number) ? "" : (number * fixedMultiplier).toFixed(2));
+  const handleInputChange = (event) => {
+    const inputValue = parseFloat(event.target.value);
+    setUserInput(isNaN(inputValue) ? '' : inputValue);
   };
 
-  const handleInputChange2 = (event) => {
-    const number = parseFloat(event.target.value);
-    setInputNumber2(isNaN(number) ? "" : number);
-    setInputNumber1(
-      isNaN(number) ? "" : (number === 0 ? 0 : number * fixedMultiplier).toFixed(2)
-    );
-  };
+  const calculatedAmount = userInput !== '' ? userInput * 8733.00 : 0;
 
 
     return(
@@ -147,7 +136,7 @@ export default function Banner(){
                                 <div className="count__down">
                                     <div className="count_down_box_hook"></div>
                                     <div className="conut_down_box" id="presale_coundDown_box">
-                                        {state > 0 
+                                        {state.seconds > 0 
                                             ? 
                                                 <div className="frist_step">
                                                     <div className="count_down_numbers text-center mb-3">
@@ -227,13 +216,7 @@ export default function Banner(){
                                                                 <span>SOL</span>
                                                             </div>
                                                             <div className="right">
-                                                                <span>
-                                                                <input type="number" name="inputNumber1"
-                                                                            id="inputNumber1"
-                                                                            placeholder="0"
-                                                                            value={inputNumber1}
-                                                                            onChange={handleInputChange1}/>
-                                                                </span>
+                                                                <span><input type="number" name="numberpay" placeholder="0" id="numberpay" value={userInput} onChange={handleInputChange} /></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -250,16 +233,7 @@ export default function Banner(){
                                                                 <span>BART</span>
                                                             </div>
                                                             <div className="right">
-                                                                <span>
-                                                                <input
-                                                                        type="number"
-                                                                        name="inputNumber2"
-                                                                        id="inputNumber2"
-                                                                        placeholder="0"
-                                                                        value={inputNumber2}
-                                                                        onChange={handleInputChange2}
-                                                                        />
-                                                                </span>
+                                                                <span><input type="number" name="numberreceive" placeholder="0" id="numberreceive" value={calculatedAmount.toFixed(2)}/></span>
                                                             </div>
                                                         </div>
                                                     </div>
