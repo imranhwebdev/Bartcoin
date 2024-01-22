@@ -108,7 +108,7 @@ export default function Banner(){
     const number = parseFloat(event.target.value);
     setInputNumber2(isNaN(number) ? "" : number);
     setInputNumber1(
-      isNaN(number) ? "" : (number === 0 ? 0 : number * fixedMultiplier).toFixed(2)
+      isNaN(number) ? "" : (number === 0 ? 0 : number / fixedMultiplier).toFixed(2)
     );
   };
 
