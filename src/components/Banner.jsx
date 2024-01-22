@@ -21,7 +21,7 @@ export default function Banner(){
 
   const countTitle = "PRESALE STARTS IN";
 
-  const [countdownDate] = useState(new Date('Jan 21, 2024 00:00:00').getTime());
+  const [countdownDate] = useState(new Date('Jan 21, 2024 00:04:00').getTime());
   const [state, setState] = useState({
       days: 0,
       hours: 0,
@@ -99,7 +99,7 @@ export default function Banner(){
     setUserInput(isNaN(inputValue) ? '' : inputValue);
   };
 
-  const calculatedAmount = userInput !== '' ? userInput * 0.5 : 0;
+  const calculatedAmount = userInput !== '' ? userInput * 8733.00 : 0;
 
 
     return(
@@ -142,11 +142,11 @@ export default function Banner(){
                                                     <div className="count_down_numbers text-center mb-3">
                                                         <div className="count_down_num_box">
                                                             <h5>{countTitle}</h5>
-                                                            <div className="countDown_box  d-flex justify-content-between">
-                                                                {/* <div className="single_items day">
+                                                            <div className="countDown_box  d-flex justify-content-center">
+                                                                <div className="single_items day">
                                                                     <h3>{state.days > 0 ? state.days : '0'}</h3>
                                                                     <span>Days</span>
-                                                                </div> */}
+                                                                </div>
                                                                 <div className="single_items hours">
                                                                     <h3>{state.hours > 0 ? state.hours : '00'}</h3>
                                                                     <span>Hours</span>
@@ -167,11 +167,11 @@ export default function Banner(){
                                             <div>
                                             <div className="count_down_numbers text-center mb-3">
                                                 <h5>{countTitle}</h5>
-                                                <div className="countDown_box  d-flex justify-content-between">
-                                                    {/* <div className="single_items day">
-                                                        <h3>{state.days > 0 ? state.days : '0'}</h3>
+                                                <div className="countDown_box  d-flex justify-content-center">
+                                                    <div className="single_items day">
+                                                        <h3>{state.days > 0 ? state.days : '00'}</h3>
                                                         <span>Days</span>
-                                                    </div> */}
+                                                    </div>
                                                     <div className="single_items hours">
                                                         <h3>{state.hours > 0 ? state.hours : '00'}</h3>
                                                         <span>Hours</span>
