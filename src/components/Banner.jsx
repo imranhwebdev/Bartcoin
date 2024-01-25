@@ -34,7 +34,7 @@ export default function Banner() {
 
   const countTitle = "PRESALE STARTS IN";
 
- const [countdownDate] = useState(new Date("Jan 25, 2024 10:49:00").getTime());
+ const [countdownDate] = useState(new Date("Jan 25, 2024 11:49:00").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
