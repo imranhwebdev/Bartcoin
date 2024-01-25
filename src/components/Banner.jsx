@@ -92,18 +92,6 @@ export default function Banner() {
       title: "Launch Price:",
       value: "0.00003",
     },
-    {
-      title: "Presale Bonus:",
-      value: "15%",
-    },
-    {
-      title: "Max Buy:",
-      value: " ",
-    },
-    {
-      title: "Min Buy:",
-      value: " ",
-    },
   ];
   const dollarSign = (
     <svg
