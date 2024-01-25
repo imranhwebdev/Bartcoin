@@ -34,7 +34,7 @@ export default function Banner() {
 
   const countTitle = "PRESALE STARTS IN";
 
- const [countdownDate] = useState(new Date("Jan 25, 2024 10:49:00").getTime());
+ const [countdownDate] = useState(new Date("Jan 25, 2024 10:40:00").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
@@ -175,14 +175,14 @@ export default function Banner() {
                 <div className="count__down">
                   <div className="count_down_box_hook"></div>
                   <div className="conut_down_box" id="presale_coundDown_box">
-                  {state.days > 0 || state.hours > 0 || state.minutes > 0 || state.seconds > 0 ? (
+                    {state > 0 ? 
                       <div className="frist_step">
                         <div className="count_down_numbers text-center mb-3">
                           <div className="count_down_num_box">
                             <h5>{countTitle}</h5>
                             <div className="countDown_box  d-flex justify-content-center">
                               <div className="single_items day">
-                                <h3>{state.days > 0 ? state.days : "00"}</h3>
+                                <h3>{state.days > 0 ? state.days : "0"}</h3>
                                 <span>Days</span>
                               </div>
                               <div className="single_items hours">
@@ -205,7 +205,7 @@ export default function Banner() {
                           </div>
                         </div>
                       </div>
-                     ) : (
+                     : (
                       <div>
                         <div className="count_down_numbers text-center mb-3">
                           <h5>{countTitle}</h5>
@@ -252,7 +252,11 @@ export default function Banner() {
                             <ProgressBar now={now} />
                           </div>
 
-                          <div className={`amount-container ${reverseOrder ? "reverse" : "" }`}>
+                          <div
+                            className={`amount-container ${
+                              reverseOrder ? "reverse" : ""
+                            }`}
+                          >
                             <div className="amount pay">
                               <div className="am_top d-flex align-items-center justify-content-between">
                                 <p>Amount in SOL you pay:</p>

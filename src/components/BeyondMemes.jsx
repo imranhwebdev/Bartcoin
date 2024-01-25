@@ -1,8 +1,7 @@
-import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import cloudImg from '../assets/img/large-cloud.png';
 function BeyondMemes() {
-    const title = "beyond  memes  new  unlites  await";
+    const title = "beyond  memes  new  utilities  await";
     const beyondItems = [
         {
             itemTitle:  "BART Wear",

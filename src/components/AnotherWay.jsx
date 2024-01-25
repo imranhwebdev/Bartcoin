@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import qrcode from '../assets/img/QR-code.svg'
 function AnotherWay() {

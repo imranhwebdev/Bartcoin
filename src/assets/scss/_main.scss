@@ -316,6 +316,10 @@
     transition: -webkit-flex-direction 0.5s ease; /* For WebKit browsers */
     transition: flex-direction 0.5s ease;
   }
+
+  .wallet-adapter-dropdown{
+    width: 100%;
+  }
 /*=================================================
 ================ The Bart area CSS ================
 =================================================*/

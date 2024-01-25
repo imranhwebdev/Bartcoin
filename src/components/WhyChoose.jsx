@@ -30,7 +30,7 @@ function WhyChoose() {
                 <div className="why_choose_content">
                     <h3>{title}</h3>
                     {whychooseItems.map((whychooseItem, index)=>(
-                        <div className="single_item d-flex align-items-center gap-4">
+                        <div className="single_item d-flex align-items-center gap-4" key={index}>
                             <figure>
                                 <img src={whychooseItem.img} alt="" />
                             </figure>

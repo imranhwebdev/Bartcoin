@@ -77,7 +77,7 @@ export default function Footer(){
                             <Col md={6} className='text-center'>
                                 <ul className="footer_menu">
                                     {menuItems.map((menuItem, index)=>(
-                                        <li><a href={menuItem.menuLink}>{menuItem.menuTxt}</a></li>
+                                        <li key={index}><a href={menuItem.menuLink}>{menuItem.menuTxt}</a></li>
                                     ))}
                                 </ul>
                             </Col>
