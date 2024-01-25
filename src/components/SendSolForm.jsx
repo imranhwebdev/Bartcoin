@@ -52,7 +52,7 @@ export const SendSolForm = () => {
     <div>
       {publicKey ? (
         <form onSubmit={sendSol} className="form">
-          <input type="number" name="amount" placeholder="Enter amount" required />
+          {/* <input type="number" name="amount" placeholder="Enter amount" required /> */}
           <button className="boxed__btn form_button" type="submit">
             BUY
           </button>
