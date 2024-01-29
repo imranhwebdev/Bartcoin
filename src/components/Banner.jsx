@@ -32,9 +32,9 @@ export default function Banner() {
     </svg>
   );
 
-  const countTitle = "PRESALE ENDS IN";
+  const countTitle = "PRESALE STARTS IN";
 
- const [countdownDate] = useState(new Date("Feb 03, 2024 21:00:00").getTime());
+ const [countdownDate] = useState(new Date("Feb 04, 2024 21:00:00").getTime());
   const [state, setState] = useState({
     days: 0,
     hours: 0,
@@ -43,7 +43,7 @@ export default function Banner() {
   });
 
   useEffect(() => {
-    const interval = setInterval(() => setNewTime(), 1000);
+    const interval = setInterval(() => setNewTime(), 0);
     return () => clearInterval(interval);
   }, [countdownDate]);
 
