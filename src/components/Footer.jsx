@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap'
 import FooterLogo from '../assets/img/site-logo.svg'
-import footerMImg from '../assets/img/footer-img.png'
+import footerMImg from '../assets/img/Bartimage.svg'
 export default function Footer(){
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 

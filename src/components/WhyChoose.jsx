@@ -13,8 +13,8 @@ function WhyChoose() {
         },
         {
             img: whyChooseImg3,
-            title: "Solana's Speed",
-            desc: "Take advantage of Solana's rapid transaction speed as $BART ensures swift and seamless transactions.",
+            title: "Community-Focused",
+            desc: "More than a memecoin, $BART thrives on community engagement. Join us as we create a dynamic space for $BART enthusiasts.",
         },
     ]
   return (

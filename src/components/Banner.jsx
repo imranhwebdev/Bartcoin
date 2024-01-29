@@ -195,7 +195,7 @@ export default function Banner() {
                       </div>
                      ) : (
                       <div>
-                        <div className="count_down_numbers text-center mb-3">
+                        {/* <div className="count_down_numbers text-center mb-3">
                           <h5>{countTitle}</h5>
                           <div className="countDown_box  d-flex justify-content-center">
                             <div className="single_items day">
@@ -219,7 +219,7 @@ export default function Banner() {
                               <span>SECONDS</span>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="countdown_box_bottom">
                           <div className="token__list">
                             {tokenSingleItmes.map((tokenSingleItme, index) => (

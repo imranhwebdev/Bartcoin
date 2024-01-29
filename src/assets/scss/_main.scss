@@ -1,8 +1,8 @@
 /* Banner CSS */
 
 .banner {
-    padding-top: 160px;
-    padding-bottom: 240px;
+    padding-top: 220px;
+    padding-bottom: 370px;
     position: relative;
     z-index: 1;
     @include mmd {
@@ -896,8 +896,8 @@
         }
         & .single_item{
             margin-bottom: 30px;
-            img{
-              max-width: 94px;  
+            figure{
+                width: 110px;  
             }
             p{
                 opacity: 0.7;  
