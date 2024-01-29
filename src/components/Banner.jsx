@@ -163,37 +163,6 @@ export default function Banner() {
                 <div className="count__down">
                   <div className="count_down_box_hook"></div>
                   <div className="conut_down_box" id="presale_coundDown_box">
-                  {state.days > 0 || state.hours > 0 || state.minutes > 0 || state.seconds > 0 ? (
-                      <div className="frist_step">
-                        <div className="count_down_numbers text-center mb-3">
-                          <div className="count_down_num_box">
-                            <h5>{countTitle}</h5>
-                            <div className="countDown_box  d-flex justify-content-center">
-                              <div className="single_items day">
-                                <h3>{state.days > 0 ? state.days : "00"}</h3>
-                                <span>Days</span>
-                              </div>
-                              <div className="single_items hours">
-                                <h3>{state.hours > 0 ? state.hours : "00"}</h3>
-                                <span>Hours</span>
-                              </div>
-                              <div className="single_items mins">
-                                <h3>
-                                  {state.minutes > 0 ? state.minutes : "00"}
-                                </h3>
-                                <span>Minutes</span>
-                              </div>
-                              <div className="single_items secounds">
-                                <h3>
-                                  {state.seconds > 0 ? state.seconds : "00"}
-                                </h3>
-                                <span>SECONDS</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     ) : (
                       <div>
                         <div className="count_down_numbers text-center mb-3">
                           <h5>{countTitle}</h5>
@@ -301,7 +270,6 @@ export default function Banner() {
                           </div>
                         </div>
                       </div>
-                    )}
                   </div>
                 </div>
               </div>
